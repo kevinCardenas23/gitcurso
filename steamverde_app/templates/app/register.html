@@ -1,0 +1,49 @@
+{% load static %}
+<link href="{% static 'css/login.css' %}" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="icon" href="{% static 'img/favicon.ico' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Registro - steamverde.tv</title>
+<!------ Include the above in your HEAD tag ---------->
+<body style="background-color:#343a40;"></body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="{% static 'img/steamverde.jpg' %}" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Register Form -->
+    <table></table>
+    <form>
+        <div class="form-group">
+            <label for="inputAddress"></label>
+            <input type="text" class="form-control" id="input" placeholder="Name">
+          </div>
+        <div class="form-group">
+          <label for="inputAddress"></label>
+          <input type="text" class="form-control" id="input1" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2"></label>
+          <input type="text" class="form-control" id="input2" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2"></label>
+            <input type="text" class="form-control" id="input2" placeholder="Passowrd">
+          </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Terms and Conditions
+            </label>
+          </div>
+        </div>
+        <button type="button" class="btn btn-success">Agregar</button>
+    </form>
+  </div>
+</div>

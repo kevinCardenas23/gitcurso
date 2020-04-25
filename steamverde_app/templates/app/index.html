@@ -1,0 +1,23 @@
+{% extends "app/base.html"%}
+
+{% block titulo %}
+Inicio - steamverde.tv
+{% endblock%}
+
+{% block titulo_2 %}
+Bienvenido a las ultimas agregadas
+{% endblock%}
+
+{% block contenido %}
+    <div class="d-flex justify-content-center">
+        {% for ul in ultimas_agregadas %}
+        <div class="card" style="width: 300px; height: 400px;" >
+            <img src="img/caratula.png" class="card-img-top" alt="..." style="width: 300px; height: 400px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ ul.titulo }}</h5>
+                <a href="descri-anon.html" class="btn btn-success " >Mas informacion</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
